@@ -1,2 +1,2 @@
-# Example
-An example greeter plugin
+# Slayer Helper
+The slayer helper plugin
