@@ -10,6 +10,15 @@ repositories {
 	mavenCentral()
 }
 
+sourceSets {
+	main {
+		resources {
+			srcDirs = ['src/main/java/com/resources']
+		}
+	}
+}
+
+
 def runeLiteVersion = 'latest.release'
 
 dependencies {
