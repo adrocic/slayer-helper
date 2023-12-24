@@ -1,8 +1,8 @@
 package com.slayerhelper.data;
 
-import com.google.gson.Gson;
 import com.slayerhelper.domain.SlayerTask;
 import lombok.extern.slf4j.Slf4j;
+import net.runelite.http.api.RuneLiteAPI;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,7 +23,7 @@ public class SlayerDataLoader {
                 this.getClass().getResourceAsStream(jsonFilePath));
              Reader reader = new InputStreamReader(inputStream)) {
 
-            SlayerTask[] tasks = new Gson().fromJson(reader, SlayerTask[].class);
+            SlayerTask[] tasks = RuneLiteAPI.GSON.fromJson(reader, SlayerTask[].class);
             return Arrays.asList(tasks);
 
         } catch (IOException e) {
