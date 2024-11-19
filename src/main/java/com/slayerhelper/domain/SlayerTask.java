@@ -4,22 +4,15 @@ import lombok.Getter;
 
 import java.util.Objects;
 
+@Getter
 public class SlayerTask {
-    @Getter
     private final String monster;
-    @Getter
     private final String[] locations;
-    @Getter
     private final String[] attributes;
-    @Getter
     private final String[] attackStyles;
-    @Getter
     private final String[] slayerMasters;
-    @Getter
     private final String[] alternatives;
-    @Getter
     private final int slayerLevel;
-    @Getter
     private final Item[] itemsRequired;
 
     public SlayerTask(
@@ -47,8 +40,7 @@ public class SlayerTask {
 
     public String getMonsterFileName() {
         String monsterImageName = monster.replace(" ", "_").concat(".png").toLowerCase();
-        String fileName = String.format("/images/monsters/%s", monsterImageName);
-        return fileName;
+        return String.format("/images/monsters/%s", monsterImageName);
     }
 
     public String[] getItemsRequiredNames() {

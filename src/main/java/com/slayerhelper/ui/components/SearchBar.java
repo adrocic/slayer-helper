@@ -9,11 +9,10 @@ import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+@Getter
 public class SearchBar {
-    @Getter
-    private final IconTextField searchBar = new IconTextField();
+    private final IconTextField searchBar;
 
-    // Define the interfaces for the handlers
     public interface OnKeyTypedHandler {
         void run(String text);
     }
@@ -22,13 +21,20 @@ public class SearchBar {
         void run();
     }
 
+    public SearchBar(OnKeyTypedHandler onKeyTypedHandler, OnClearHandler onClearHandler, IconTextField searchBar) {
+        this.searchBar = searchBar;
+        initialize(onKeyTypedHandler, onClearHandler);
+    }
+
     public SearchBar(OnKeyTypedHandler onKeyTypedHandler, OnClearHandler onClearHandler) {
+        this(onKeyTypedHandler, onClearHandler, new IconTextField());
+    }
+
+    private void initialize(OnKeyTypedHandler onKeyTypedHandler, OnClearHandler onClearHandler) {
         searchBar.addKeyListener(new KeyAdapter() {
             @Override
             public void keyReleased(KeyEvent e) {
-                // Run the handler with the current text of the search bar
                 onKeyTypedHandler.run(searchBar.getText());
-
             }
         });
 
