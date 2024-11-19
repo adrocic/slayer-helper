@@ -11,7 +11,6 @@ import java.io.Reader;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Objects;
 
 @Slf4j
 public class SlayerDataLoader {
@@ -19,18 +18,21 @@ public class SlayerDataLoader {
     private String jsonFilePath = "/data/slayerTasks.json";
 
     public Collection<SlayerTask> load() {
-        try (InputStream inputStream = Objects.requireNonNull(
-                this.getClass().getResourceAsStream(jsonFilePath));
-             Reader reader = new InputStreamReader(inputStream)) {
-
-            SlayerTask[] tasks = RuneLiteAPI.GSON.fromJson(reader, SlayerTask[].class);
-            return Arrays.asList(tasks);
-
+        try (InputStream inputStream = this.getClass().getResourceAsStream(jsonFilePath)) {
+            if (inputStream == null) {
+                log.error("JSON file not found: {}", jsonFilePath);
+                return Collections.emptyList();
+            }
+            try (Reader reader = new InputStreamReader(inputStream)) {
+                SlayerTask[] tasks = RuneLiteAPI.GSON.fromJson(reader, SlayerTask[].class);
+                return Arrays.asList(tasks);
+            }
         } catch (IOException e) {
             log.error("Could not read JSON from slayerTasks.json", e);
             return Collections.emptyList();
         }
     }
+
 
     public void setJsonFilePathForTesting(String jsonFilePath) {
         this.jsonFilePath = jsonFilePath;

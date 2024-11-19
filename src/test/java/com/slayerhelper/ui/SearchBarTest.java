@@ -1,57 +1,60 @@
 package com.slayerhelper.ui;
 
 import com.slayerhelper.ui.components.SearchBar;
-import net.runelite.client.ui.components.IconTextField;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.ArgumentCaptor;
+import net.runelite.client.ui.components.IconTextField;
+import net.runelite.client.ui.components.IconTextField.Icon;
+import static org.mockito.Mockito.clearInvocations;
+
+import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
 public class SearchBarTest {
-
-    private SearchBar searchBar;
+    private IconTextField iconTextFieldMock;
+    private SearchBar.OnKeyTypedHandler onKeyTypedHandlerMock;
+    private SearchBar.OnClearHandler onClearHandlerMock;
 
     @Before
     public void setUp() {
-        searchBar = new SearchBar(
-                text -> System.out.println("Key Typed: " + text), // Replace with your own implementation
-                () -> System.out.println("Cleared")); // Replace with your own implementation
+        iconTextFieldMock = mock(IconTextField.class);
+        onKeyTypedHandlerMock = mock(SearchBar.OnKeyTypedHandler.class);
+        onClearHandlerMock = mock(SearchBar.OnClearHandler.class);
     }
 
     @Test
-    public void testSearchBarInitialization() {
-        IconTextField iconTextField = searchBar.getSearchBar();
+    public void testKeyReleasedHandler() {
+        ArgumentCaptor<KeyAdapter> keyAdapterCaptor = ArgumentCaptor.forClass(KeyAdapter.class);
+        verify(iconTextFieldMock).addKeyListener(keyAdapterCaptor.capture());
+        KeyAdapter keyAdapter = keyAdapterCaptor.getValue();
+        assertNotNull("KeyAdapter should not be null", keyAdapter);
 
-        // Verify that the search bar is not null
-        assertNotNull(iconTextField);
+        when(iconTextFieldMock.getText()).thenReturn("test");
 
-        // Verify that the search bar is editable
-        assertTrue(iconTextField.isEnabled());
+        KeyEvent keyEvent = new KeyEvent(iconTextFieldMock, KeyEvent.KEY_RELEASED, System.currentTimeMillis(), 0, KeyEvent.VK_UNDEFINED, 't');
+        keyAdapter.keyReleased(keyEvent);
+
+        verify(onKeyTypedHandlerMock).run("test");
     }
 
     @Test
-    public void testSearchBarKeyReleasedHandler() {
-        IconTextField iconTextField = searchBar.getSearchBar();
+    public void testClearListener() {
+        ArgumentCaptor<Runnable> clearListenerCaptor = ArgumentCaptor.forClass(Runnable.class);
+        verify(iconTextFieldMock).addClearListener(clearListenerCaptor.capture());
+        Runnable clearListener = clearListenerCaptor.getValue();
+        assertNotNull("ClearListener should not be null", clearListener);
 
-        // Simulate key release event with "test" text
-        iconTextField.setText("test");
-        KeyEvent keyEvent = new KeyEvent(iconTextField, KeyEvent.KEY_RELEASED, System.currentTimeMillis(),
-                0, KeyEvent.VK_UNDEFINED, 't');
-        iconTextField.dispatchEvent(keyEvent);
+        clearInvocations(iconTextFieldMock, onClearHandlerMock);
+        clearListener.run();
 
-        // Verify that the key typed handler was called with the correct text
-        // Replace with your own implementation of the handler
-        // For testing purposes, you can use a custom listener to capture the text
+        verify(onClearHandlerMock).run();
+
+        verify(iconTextFieldMock, times(1)).setIcon(Icon.SEARCH);
+        verify(iconTextFieldMock, times(1)).setEditable(true);
     }
 
-    @Test
-    public void testSearchBarClearListener() {
-        IconTextField iconTextField = searchBar.getSearchBar();
-
-        // Simulate clearing the search bar
-        iconTextField.setText("");
-        // assert that the search bar is cleared
-        assertEquals("", iconTextField.getText());
-    }
 }

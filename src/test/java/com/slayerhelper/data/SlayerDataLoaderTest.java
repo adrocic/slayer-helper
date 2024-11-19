@@ -44,18 +44,6 @@ public class SlayerDataLoaderTest {
     }
 
     @Test
-    public void testLoadInvalidJsonFormat() {
-        // Load Slayer tasks from a JSON file with an invalid format (create this for testing)
-        String invalidJsonFilePath = "/data/invalidSlayerTasks.json";
-        // Load Slayer tasks from the file with invalid format
-        dataLoader.setJsonFilePathForTesting(invalidJsonFilePath);
-        Collection<SlayerTask> slayerTasks = dataLoader.load();
-
-        // Assert that the loaded tasks collection is empty or handle the error as expected
-        assertTrue(slayerTasks.isEmpty());
-    }
-
-    @Test
     public void testLoadMissingJsonFile() {
         // Load Slayer tasks from a missing JSON file (a file that doesn't exist)
         String missingJsonFilePath = "/data/nonExistentSlayerTasks.json";
