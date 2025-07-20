@@ -1,5 +1,10 @@
 package com.slayerhelper.util;
 import com.slayerhelper.ui.components.Tab;
+import net.runelite.client.RuneLite;
+import net.runelite.client.plugins.slayer.SlayerConfig;
+import net.runelite.client.plugins.slayer.SlayerPlugin;
+import net.runelite.http.api.RuneLiteAPI;
+import net.runelite.http.api.chat.Task;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,11 +14,35 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 public class WikiUtil {
+    public enum TaskDetail {
+        NONE("None"),
+        MAP_LOCATION("Map Location"),
+        ITEMS_NEEDED("Items Needed"),
+        MONSTER_ATTACK_STYLE("Monster Attack Style"),
+        SLAYER_MASTER("Slayer Master"),
+        MONSTER_ATTRIBUTES("Monster Attributes");
+
+        // Field to store the custom string description
+        private String taskDetailName;
+
+        // Constructor to initialize the custom string
+        TaskDetail(String taskDetailName) {
+            this.taskDetailName = taskDetailName;
+        }
+
+        // Override toString() to return the custom string
+        @Override
+        public String toString() {
+            return this.taskDetailName;
+        }
+    }
 
     public static JButton createLinkButton(String text, final String url) {
         JButton button = new JButton(text);
         button.setCursor(new Cursor(Cursor.HAND_CURSOR));
         button.setFocusPainted(false);
+        boolean enabled = !text.equalsIgnoreCase("None");
+        button.setEnabled(enabled);
 
         button.addActionListener(new ActionListener() {
             @Override
@@ -45,18 +74,18 @@ public class WikiUtil {
                     "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
-    public static String getWikiUrl(String type, String name) {
+    public static String getWikiUrl(TaskDetail type, String name) {
         String baseUrl = "https://oldschool.runescape.wiki/w/";
         String pattern = "_(.+)$"; // Matches an underscore followed by anything at the end
-        switch (type.toLowerCase()) {
-            case "none":
+        switch (type) {
+            case NONE:
                 return "about:blank";
-            case "map location":
-            case "items needed":
-            case "monster attack style":
-            case "slayer master":
-                return baseUrl + name.replace(" ", "_").replaceFirst(pattern, "");
-            case "monsters attributes":
+            case MAP_LOCATION:
+            case ITEMS_NEEDED:
+            case MONSTER_ATTACK_STYLE:
+            case SLAYER_MASTER:
+                return baseUrl + name.replace(" ", "_").replace(pattern, "");
+            case MONSTER_ATTRIBUTES:
                 return baseUrl + name + "_(attribute)";
             default:
                 throw new IllegalArgumentException("Unknown type: " + type);

@@ -5,6 +5,7 @@ import com.slayerhelper.ui.renderers.SlayerTasksRenderer;
 import com.slayerhelper.data.SlayerDataLoader;
 import com.slayerhelper.domain.SlayerTask;
 import com.slayerhelper.ui.components.*;
+import com.slayerhelper.util.WikiUtil;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.client.ui.PluginPanel;
 import net.runelite.client.util.ImageUtil;
@@ -61,11 +62,11 @@ public class SlayerPluginPanel extends PluginPanel {
             icons.add(imageIcon);
         }
 
-        Tab locationTab = new Tab(icons.get(0), task.getLocations(), "Map Location");
-        Tab itemTab = new Tab(icons.get(1), task.getItemsRequiredNames(), "Items Needed");
-        Tab attackStylesTab = new Tab(icons.get(2), task.getAttackStyles(), "Monster Attack Style");
-        Tab attributesTab = new Tab(icons.get(3), task.getAttributes(), "Monsters Attributes");
-        Tab masterTab = new Tab(icons.get(4), task.getSlayerMasters(), "Slayer Master");
+        Tab locationTab = new Tab(icons.get(0), task.getLocations(), WikiUtil.TaskDetail.MAP_LOCATION);
+        Tab itemTab = new Tab(icons.get(1), task.getItemsRequiredNames(), WikiUtil.TaskDetail.ITEMS_NEEDED);
+        Tab attackStylesTab = new Tab(icons.get(2), task.getAttackStyles(), WikiUtil.TaskDetail.MONSTER_ATTACK_STYLE);
+        Tab attributesTab = new Tab(icons.get(3), task.getAttributes(), WikiUtil.TaskDetail.MONSTER_ATTRIBUTES);
+        Tab masterTab = new Tab(icons.get(4), task.getSlayerMasters(), WikiUtil.TaskDetail.SLAYER_MASTER);
         tabPanel.addTabs(new Tab[]{locationTab, itemTab, attackStylesTab, attributesTab, masterTab});
 
         return tabPanel;

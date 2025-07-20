@@ -14,13 +14,13 @@ public class Tab {
     @Getter
     private final JPanel content;
 
-    public Tab(ImageIcon icon, String[] content, String type) {
+    public Tab(ImageIcon icon, String[] content, WikiUtil.TaskDetail type) {
         Arrays.sort(content, (a, b) -> Integer.compare(b.length(), a.length()));
         Objects.requireNonNull(icon, "icon cannot be null");
         Objects.requireNonNull(content, "content cannot be null");
         JPanel contentPanel = new JPanel();
         contentPanel.setBackground(new Color(30, 30, 30));
-        JLabel typeLabel = new JLabel(type);
+        JLabel typeLabel = new JLabel(type.toString());
         typeLabel.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 15));
         typeLabel.setForeground(Color.ORANGE);
         typeLabel.setHorizontalAlignment(SwingConstants.CENTER);
