@@ -18,12 +18,14 @@ public class SearchBarTest {
     private IconTextField iconTextFieldMock;
     private SearchBar.OnKeyTypedHandler onKeyTypedHandlerMock;
     private SearchBar.OnClearHandler onClearHandlerMock;
+    private SearchBar searchBar;
 
     @Before
     public void setUp() {
         iconTextFieldMock = mock(IconTextField.class);
         onKeyTypedHandlerMock = mock(SearchBar.OnKeyTypedHandler.class);
         onClearHandlerMock = mock(SearchBar.OnClearHandler.class);
+        searchBar = new SearchBar(onKeyTypedHandlerMock, onClearHandlerMock, iconTextFieldMock);
     }
 
     @Test
@@ -35,7 +37,8 @@ public class SearchBarTest {
 
         when(iconTextFieldMock.getText()).thenReturn("test");
 
-        KeyEvent keyEvent = new KeyEvent(iconTextFieldMock, KeyEvent.KEY_RELEASED, System.currentTimeMillis(), 0, KeyEvent.VK_UNDEFINED, 't');
+        KeyEvent keyEvent = new KeyEvent(iconTextFieldMock, KeyEvent.KEY_RELEASED, System.currentTimeMillis(), 0,
+                KeyEvent.VK_UNDEFINED, 't');
         keyAdapter.keyReleased(keyEvent);
 
         verify(onKeyTypedHandlerMock).run("test");
