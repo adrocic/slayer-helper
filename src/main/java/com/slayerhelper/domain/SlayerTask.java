@@ -1,7 +1,9 @@
 package com.slayerhelper.domain;
 
+import com.slayerhelper.data.SlayerMaster;
 import lombok.Getter;
 
+import java.util.List;
 import java.util.Objects;
 
 @Getter
@@ -10,7 +12,7 @@ public class SlayerTask {
     private final String[] locations;
     private final String[] attributes;
     private final String[] attackStyles;
-    private final String[] slayerMasters;
+    private final List<SlayerMaster> slayerMasters;
     private final String[] alternatives;
     private final int slayerLevel;
     private final Item[] itemsRequired;
@@ -23,7 +25,7 @@ public class SlayerTask {
             String[] attributes,
             String[] attackStyles,
             String[] alternatives,
-            String[] slayerMasters) {
+			List<SlayerMaster> slayerMasters) {
         this.monster = Objects.requireNonNull(monster, "monster cannot be null");
         this.slayerLevel = slayerLevel;
         this.locations = Objects.requireNonNull(locations, "locations cannot be null");
@@ -31,7 +33,7 @@ public class SlayerTask {
         this.attributes = Objects.requireNonNull(attributes, "attributes cannot be null");
         this.attackStyles = Objects.requireNonNull(attackStyles, "attack styles cannot be null");
         this.alternatives = Objects.requireNonNull(alternatives, "alternatives cannot be null");
-        this.slayerMasters = Objects.requireNonNull(slayerMasters, "slayer masters cannot be null");
+        this.slayerMasters = slayerMasters;
     }
 
     public String getMonsterLowerCase() {

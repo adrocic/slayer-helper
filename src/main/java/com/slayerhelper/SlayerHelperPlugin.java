@@ -1,7 +1,10 @@
 package com.slayerhelper;
 
+import com.slayerhelper.data.SlayerTaskRepository;
 import com.slayerhelper.ui.panels.SlayerPluginPanel;
 import lombok.extern.slf4j.Slf4j;
+import net.runelite.api.Client;
+import net.runelite.client.callback.ClientThread;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.ClientToolbar;
@@ -20,11 +23,18 @@ public class SlayerHelperPlugin extends Plugin {
 	@Inject
 	private ClientToolbar clientToolbar;
 
+	@Inject
+	private SlayerTaskRepository slayerTaskRepository;
+
+	@Inject
+	private ClientThread clientThread;
+
 	private SlayerPluginPanel slayerPanel;
 	private NavigationButton navButton;
 
 	@Override
 	protected void startUp() {
+		clientThread.invoke(() -> slayerTaskRepository.load());
 		slayerPanel = injector.getInstance(SlayerPluginPanel.class);
 		navButton = getNavButton();
 		clientToolbar.addNavigation(navButton);
@@ -35,6 +45,7 @@ public class SlayerHelperPlugin extends Plugin {
 		if (navButton != null) {
 			clientToolbar.removeNavigation(navButton);
 		}
+		slayerTaskRepository.clear();
 	}
 
 	private NavigationButton getNavButton() {

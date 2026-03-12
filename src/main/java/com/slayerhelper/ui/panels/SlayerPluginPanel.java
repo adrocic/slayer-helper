@@ -1,15 +1,18 @@
 package com.slayerhelper.ui.panels;
 
+import com.slayerhelper.data.SlayerMaster;
+import com.slayerhelper.data.SlayerTaskRepository;
+import com.slayerhelper.domain.SlayerTask;
 import com.slayerhelper.util.SlayerTasksFetcher;
 import com.slayerhelper.ui.renderers.SlayerTasksRenderer;
-import com.slayerhelper.data.SlayerDataLoader;
-import com.slayerhelper.domain.SlayerTask;
 import com.slayerhelper.ui.components.*;
 import lombok.extern.slf4j.Slf4j;
+import net.runelite.client.game.ItemManager;
 import net.runelite.client.ui.PluginPanel;
 import net.runelite.client.util.ImageUtil;
 
 import javax.annotation.Nullable;
+import javax.inject.Inject;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -21,13 +24,16 @@ public class SlayerPluginPanel extends PluginPanel {
 
     private final SlayerTasksFetcher slayerTasksFetcher;
     private final SearchBar searchBar;
+    private final ItemManager itemManager;
     private DefaultListModel<SlayerTask> listModel = new DefaultListModel<>();
     private final String[] tabImageNamesWithExtensions = {
             "world_map.png", "inventory.png", "protect_from_all.png", "combat.png", "slayer_icon.png"
     };
 
-    public SlayerPluginPanel() {
-        slayerTasksFetcher = new SlayerTasksFetcher(new SlayerDataLoader());
+    @Inject
+    public SlayerPluginPanel(SlayerTaskRepository slayerTaskRepository, ItemManager itemManager) {
+        this.slayerTasksFetcher = new SlayerTasksFetcher(slayerTaskRepository);
+        this.itemManager = itemManager;
         searchBar = new SearchBar(this::filterList, this::clearFilter);
         createTaskListPanel(new ArrayList<>());
     }
@@ -62,10 +68,11 @@ public class SlayerPluginPanel extends PluginPanel {
         }
 
         Tab locationTab = new Tab(icons.get(0), task.getLocations(), "Map Location");
-        Tab itemTab = new Tab(icons.get(1), task.getItemsRequiredNames(), "Items Needed");
+        Tab itemTab = new Tab(icons.get(1), task.getItemsRequired(), "Items Needed", itemManager);
         Tab attackStylesTab = new Tab(icons.get(2), task.getAttackStyles(), "Monster Attack Style");
         Tab attributesTab = new Tab(icons.get(3), task.getAttributes(), "Monsters Attributes");
-        Tab masterTab = new Tab(icons.get(4), task.getSlayerMasters(), "Slayer Master");
+        String[] masterNames = task.getSlayerMasters().stream().map(SlayerMaster::getDisplayName).toArray(String[]::new);
+        Tab masterTab = new Tab(icons.get(4), masterNames, "Slayer Master");
         tabPanel.addTabs(new Tab[]{locationTab, itemTab, attackStylesTab, attributesTab, masterTab});
 
         return tabPanel;
