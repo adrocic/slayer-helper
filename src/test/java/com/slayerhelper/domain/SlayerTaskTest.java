@@ -1,7 +1,11 @@
 package com.slayerhelper.domain;
 
+import com.slayerhelper.data.SlayerMaster;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class SlayerTaskTest {
@@ -19,7 +23,7 @@ public class SlayerTaskTest {
                 new String[]{"Attribute 1", "Attribute 2"},
                 new String[]{"Attack Style 1", "Attack Style 2"},
                 new String[]{"Alternative 1", "Alternative 2"},
-                new String[]{"Slayer Master 1", "Slayer Master 2"}
+                List.of(SlayerMaster.CHAELDAR, SlayerMaster.NIEVE)
         );
     }
 

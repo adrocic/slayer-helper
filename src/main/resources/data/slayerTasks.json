@@ -1,20 +1,13 @@
 [
   {
-    "monster": "Aberrant spectre",
-    "slayerLevel": 60,
+    "taskid": 41,
     "locations": [
       "Slayer Tower",
       "Stronghold Slayer Cave"
     ],
     "itemsRequired": [
-      {
-        "name": "Nose peg",
-        "icon": "Nose peg.png"
-      },
-      {
-        "name": "Slayer helmet",
-        "icon": "Slayer helmet.png"
-      }
+      "Nose peg",
+      "Slayer helmet"
     ],
     "attributes": [
       "Undead"
@@ -24,27 +17,17 @@
     ],
     "alternatives": [
       "Deviant spectre"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Abyssal demon",
-    "slayerLevel": 85,
+    "taskid": 42,
     "locations": [
       "Slayer Tower",
       "Abyssal Area",
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Demon"
@@ -54,33 +37,17 @@
     ],
     "alternatives": [
       "Abyssal Sire"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Adamant dragon",
-    "slayerLevel": 1,
+    "taskid": 108,
     "locations": [
       "Lithkren Vault"
     ],
     "itemsRequired": [
-      {
-        "name": "Anti-dragon shield",
-        "icon": "Anti-dragon shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Antifire potion(4)",
-        "icon": "Antifire potion(4).png"
-      }
+      "Anti-dragon shield",
+      "Dragonfire shield",
+      "Antifire potion(4)"
     ],
     "attributes": [
       "Draconic",
@@ -94,16 +61,10 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Ankou",
-    "slayerLevel": 1,
+    "taskid": 79,
     "locations": [
       "Stronghold of Security",
       "Wilderness volcano",
@@ -111,9 +72,7 @@
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Undead"
@@ -123,30 +82,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Vannaka",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Aviansie",
-    "slayerLevel": 1,
+    "taskid": 94,
     "locations": [
       "God Wars Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Ranged",
-        "icon": "Ranged.png"
-      },
-      {
-        "name": "Magic weaponry",
-        "icon": "Magic weaponry.png"
-      }
+      "Ranged",
+      "Magic weaponry"
     ],
     "attributes": [
       "None"
@@ -155,29 +100,19 @@
       "Ranged"
     ],
     "alternatives": [
-      "Kree\u0027arra",
+      "Kree'arra",
       "Flight Kilisa",
       "Flockleader Geerin",
       "Wingman Skree"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Bandit",
-    "slayerLevel": 1,
+    "taskid": 102,
     "locations": [
       "Bandit Camp"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -187,26 +122,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia"
     ]
   },
   {
-    "monster": "Banshee",
-    "slayerLevel": 15,
+    "taskid": 38,
     "locations": [
       "Slayer Tower"
     ],
     "itemsRequired": [
-      {
-        "name": "Earmuffs",
-        "icon": "Earmuffs.png"
-      },
-      {
-        "name": "Slayer helmet",
-        "icon": "Slayer helmet.png"
-      }
+      "Earmuffs",
+      "Slayer helmet"
     ],
     "attributes": [
       "Undead"
@@ -216,29 +141,16 @@
     ],
     "alternatives": [
       "Twisted Banshee"
-    ],
-    "slayerMasters": [
-      "Turael",
-      "Mazchna",
-      "Vannaka",
-      "Chaeldar"
     ]
   },
   {
-    "monster": "Basilisk",
-    "slayerLevel": 40,
+    "taskid": 43,
     "locations": [
       "Fremennik Slayer Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Mirror shield",
-        "icon": "Mirror shield.png"
-      },
-      {
-        "name": "V\u0027s shield",
-        "icon": "V\u0027s shield.png"
-      }
+      "Mirror shield",
+      "V's shield"
     ],
     "attributes": [
       "None"
@@ -248,27 +160,17 @@
     ],
     "alternatives": [
       "Basilisk Knights"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Bat",
-    "slayerLevel": 1,
+    "taskid": 8,
     "locations": [
       "Paterdomus",
       "Morytania",
       "Coal Trucks"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -280,24 +182,17 @@
       "Giant bat",
       "Albino bat",
       "Deathwing"
-    ],
-    "slayerMasters": [
-      "Turael",
-      "Mazchna"
     ]
   },
   {
-    "monster": "Bear",
-    "slayerLevel": 1,
+    "taskid": 13,
     "locations": [
       "East Ardougne",
       "south of Varrock",
       "south-east of Rellekka house portal"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -309,25 +204,17 @@
       "Black bear",
       "Grizzly bear",
       "Callisto"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Turael",
-      "Mazchna"
     ]
   },
   {
-    "monster": "Bird",
-    "slayerLevel": 1,
+    "taskid": 5,
     "locations": [
       "Across west Lumbridge bridge",
       "Port Sarim pier",
       "south of Falador"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -344,14 +231,10 @@
       "Terrorbird",
       "Vulture",
       "Undead chicken"
-    ],
-    "slayerMasters": [
-      "Turael"
     ]
   },
   {
-    "monster": "Black demon",
-    "slayerLevel": 1,
+    "taskid": 30,
     "locations": [
       "Taverley Dungeon",
       "Edgeville Dungeon",
@@ -359,9 +242,7 @@
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Demon"
@@ -374,36 +255,19 @@
       "Balfrug Kreeyath",
       "Skotizo",
       "Porazdir"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Black dragon",
-    "slayerLevel": 1,
+    "taskid": 27,
     "locations": [
       "Taverley Dungeon",
       "Lava Maze",
-      "Evil Chicken\u0027s Lair"
+      "Evil Chicken's Lair"
     ],
     "itemsRequired": [
-      {
-        "name": "Anti-dragon shield",
-        "icon": "Anti-dragon shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Antifire potion(4)",
-        "icon": "Antifire potion(4).png"
-      }
+      "Anti-dragon shield",
+      "Dragonfire shield",
+      "Antifire potion(4)"
     ],
     "attributes": [
       "Draconic",
@@ -417,25 +281,16 @@
       "Baby black dragon",
       "King Black Dragon",
       "Brutal black dragon"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Black Knight",
-    "slayerLevel": 1,
+    "taskid": 119,
     "locations": [
       "Lava Maze",
       "north of Venenatis"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -445,14 +300,10 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia"
     ]
   },
   {
-    "monster": "Bloodveld",
-    "slayerLevel": 50,
+    "taskid": 48,
     "locations": [
       "Slayer Tower",
       "God Wars Dungeon",
@@ -460,9 +311,7 @@
       "Stronghold Slayer Cave"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -472,38 +321,20 @@
     ],
     "alternatives": [
       "Mutated Bloodveld"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Blue dragon",
-    "slayerLevel": 1,
+    "taskid": 25,
     "locations": [
       "Taverley Dungeon",
       "Ogre Enclave",
-      "Heroes\u0027 Guild",
+      "Heroes' Guild",
       "Corsair Cove Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Anti-dragon shield",
-        "icon": "Anti-dragon shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Antifire potion(4)",
-        "icon": "Antifire potion(4).png"
-      }
+      "Anti-dragon shield",
+      "Dragonfire shield",
+      "Antifire potion(4)"
     ],
     "attributes": [
       "Draconic",
@@ -517,25 +348,15 @@
       "Baby blue dragon",
       "Brutal blue dragon",
       "Vorkath"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Brine rat",
-    "slayerLevel": 47,
+    "taskid": 84,
     "locations": [
       "Brine Rat Cavern"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -545,34 +366,18 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve"
     ]
   },
   {
-    "monster": "Bronze dragon",
-    "slayerLevel": 1,
+    "taskid": 58,
     "locations": [
       "Brimhaven Dungeon",
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "Anti-dragon shield",
-        "icon": "Anti-dragon shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Antifire potion(4)",
-        "icon": "Antifire potion(4).png"
-      }
+      "Anti-dragon shield",
+      "Dragonfire shield",
+      "Antifire potion(4)"
     ],
     "attributes": [
       "Draconic",
@@ -585,23 +390,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten"
     ]
   },
   {
-    "monster": "Catablepon",
-    "slayerLevel": 1,
+    "taskid": 78,
     "locations": [
       "Stronghold of Security"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -612,23 +409,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Mazchna"
     ]
   },
   {
-    "monster": "Cave bug",
-    "slayerLevel": 7,
+    "taskid": 63,
     "locations": [
       "Lumbridge Swamp Caves",
       "Dorgesh-Kaan South Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Bullseye lantern (lit)",
-        "icon": "Bullseye lantern (lit).png"
-      }
+      "Bullseye lantern (lit)"
     ],
     "attributes": [
       "None"
@@ -638,25 +428,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Turael",
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Cave crawler",
-    "slayerLevel": 10,
+    "taskid": 37,
     "locations": [
       "Fremennik Slayer Dungeon",
       "Lumbridge Swamp Caves",
       "Dorgesh-Kaan South Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -667,29 +449,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Turael",
-      "Mazchna",
-      "Vannaka",
-      "Chaeldar"
     ]
   },
   {
-    "monster": "Cave horror",
-    "slayerLevel": 58,
+    "taskid": 80,
     "locations": [
-      "Mos Le\u0027Harmless Cave"
+      "Mos Le'Harmless Cave"
     ],
     "itemsRequired": [
-      {
-        "name": "Witchwood icon",
-        "icon": "Witchwood icon.png"
-      },
-      {
-        "name": "Bullseye lantern (lit)",
-        "icon": "Bullseye lantern (lit).png"
-      }
+      "Witchwood icon",
+      "Bullseye lantern (lit)"
     ],
     "attributes": [
       "None"
@@ -700,25 +469,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Chaeldar",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Cave slime",
-    "slayerLevel": 17,
+    "taskid": 62,
     "locations": [
       "Lumbridge Swamp Caves",
       "Dorgesh-Kaan South Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Bullseye lantern (lit)",
-        "icon": "Bullseye lantern (lit).png"
-      }
+      "Bullseye lantern (lit)"
     ],
     "attributes": [
       "None"
@@ -729,24 +489,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Turael",
-      "Mazchna",
-      "Vannaka",
-      "Chaeldar"
     ]
   },
   {
-    "monster": "Cave kraken",
-    "slayerLevel": 87,
+    "taskid": 92,
     "locations": [
       "Kraken Cove"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -756,25 +507,16 @@
     ],
     "alternatives": [
       "Kraken"
-    ],
-    "slayerMasters": [
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Chaos druid",
-    "slayerLevel": 1,
+    "taskid": 110,
     "locations": [
       "Edgeville Dungeon",
       "Chaos Temple"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -784,26 +526,16 @@
     ],
     "alternatives": [
       "Elder Chaos druid"
-    ],
-    "slayerMasters": [
-      "Krystilia"
     ]
   },
   {
-    "monster": "Cockatrice",
-    "slayerLevel": 25,
+    "taskid": 44,
     "locations": [
       "Fremennik Slayer Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Mirror shield",
-        "icon": "Mirror shield.png"
-      },
-      {
-        "name": "V\u0027s shield",
-        "icon": "V\u0027s shield.png"
-      }
+      "Mirror shield",
+      "V's shield"
     ],
     "attributes": [
       "None"
@@ -813,24 +545,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Cow",
-    "slayerLevel": 1,
+    "taskid": 6,
     "locations": [
       "South of Falador",
       "North of Al-Kharid gate",
       "Various locations"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -841,21 +566,15 @@
     "alternatives": [
       "Cow calf",
       "Undead cow"
-    ],
-    "slayerMasters": [
-      "Turael"
     ]
   },
   {
-    "monster": "Crawling Hand",
-    "slayerLevel": 5,
+    "taskid": 39,
     "locations": [
       "Slayer Tower"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -865,24 +584,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Turael",
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Crocodile",
-    "slayerLevel": 1,
+    "taskid": 65,
     "locations": [
       "Near Elid",
       "Southern shore of Kharidian Desert"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -892,24 +603,18 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka"
     ]
   },
   {
-    "monster": "Dagannoth",
-    "slayerLevel": 1,
+    "taskid": 35,
     "locations": [
       "Lighthouse",
       "Waterbirth Island Dungeon",
       "Catacombs of Kourend",
-      "Jormungand\u0027s Prison"
+      "Jormungand's Prison"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -923,26 +628,16 @@
       "Dagannoth Prime",
       "Dagannoth Rex",
       "Dagannoth Supreme"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Dark beast",
-    "slayerLevel": 90,
+    "taskid": 66,
     "locations": [
       "Path to Temple of Light (Mourner tunnels)",
       "Iorwerth Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -953,23 +648,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Dark warrior",
-    "slayerLevel": 1,
+    "taskid": 103,
     "locations": [
-      "Dark Warriors\u0027 Fortress"
+      "Dark Warriors' Fortress"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -979,24 +666,18 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia"
     ]
   },
   {
-    "monster": "Dog",
-    "slayerLevel": 1,
+    "taskid": 22,
     "locations": [
       "Ardougne",
-      "McGrubor\u0027s Wood",
+      "McGrubor's Wood",
       "Black Arm Gang hideout in Brimhaven",
       "Brimhaven Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1009,31 +690,17 @@
       "Wild dog",
       "Jackal",
       "Temple Guardian"
-    ],
-    "slayerMasters": [
-      "Turael",
-      "Mazchna"
     ]
   },
   {
-    "monster": "Drake",
-    "slayerLevel": 84,
+    "taskid": 112,
     "locations": [
       "Karuulm Slayer Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Boots of stone",
-        "icon": "Boots of stone.png"
-      },
-      {
-        "name": "Boots of brimstone",
-        "icon": "Boots of brimstone.png"
-      },
-      {
-        "name": "Granite boots",
-        "icon": "Granite boots.png"
-      }
+      "Boots of stone",
+      "Boots of brimstone",
+      "Granite boots"
     ],
     "attributes": [
       "Draconic"
@@ -1043,29 +710,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Dust devil",
-    "slayerLevel": 65,
+    "taskid": 49,
     "locations": [
       "Smoke Dungeon",
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "Facemask",
-        "icon": "Facemask.png"
-      },
-      {
-        "name": "Slayer helmet",
-        "icon": "Slayer helmet.png"
-      }
+      "Facemask",
+      "Slayer helmet"
     ],
     "attributes": [
       "None"
@@ -1075,18 +730,10 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Dwarf",
-    "slayerLevel": 1,
+    "taskid": 57,
     "locations": [
       "Ice Mountain",
       "Mining Guild",
@@ -1096,9 +743,7 @@
       "south of Yanille"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1109,21 +754,15 @@
     "alternatives": [
       "Black Guard",
       "Chaos dwarf"
-    ],
-    "slayerMasters": [
-      "Turael"
     ]
   },
   {
-    "monster": "Earth Warrior",
-    "slayerLevel": 1,
+    "taskid": 54,
     "locations": [
       "Edgeville Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1133,25 +772,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Elf",
-    "slayerLevel": 1,
+    "taskid": 56,
     "locations": [
       "Lletya",
       "Iorwerth Camp",
       "Prifddinas"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1161,24 +792,15 @@
     ],
     "alternatives": [
       "Mourner (Lvl 108 variant only)"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Ent",
-    "slayerLevel": 1,
+    "taskid": 101,
     "locations": [
       "Forests north and east of the Chaos Temple"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1188,22 +810,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia"
     ]
   },
   {
-    "monster": "Fever spider",
-    "slayerLevel": 42,
+    "taskid": 69,
     "locations": [
       "Braindeath Island (brewery basement)"
     ],
     "itemsRequired": [
-      {
-        "name": "Slayer gloves",
-        "icon": "Slayer gloves.png"
-      }
+      "Slayer gloves"
     ],
     "attributes": [
       "None"
@@ -1213,15 +828,10 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar"
     ]
   },
   {
-    "monster": "Fire giant",
-    "slayerLevel": 1,
+    "taskid": 16,
     "locations": [
       "Brimhaven Dungeon",
       "Deep Wilderness Dungeon",
@@ -1231,9 +841,7 @@
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Fiery"
@@ -1243,26 +851,14 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Flesh Crawler",
-    "slayerLevel": 1,
     "locations": [
       "Stronghold of Security (level 2)"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1272,34 +868,18 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Mazchna"
     ]
   },
   {
-    "monster": "Fossil Island Wyvern",
-    "slayerLevel": 66,
+    "taskid": 106,
     "locations": [
       "Wyvern Cave"
     ],
     "itemsRequired": [
-      {
-        "name": "Elemental shield",
-        "icon": "Elemental shield.png"
-      },
-      {
-        "name": "Mind shield",
-        "icon": "Mind shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Ancient wyvern shield",
-        "icon": "Ancient wyvern shield.png"
-      }
+      "Elemental shield",
+      "Mind shield",
+      "Dragonfire shield",
+      "Ancient wyvern shield"
     ],
     "attributes": [
       "Draconic"
@@ -1314,29 +894,16 @@
       "Spitting wyvern",
       "Taloned wyvern",
       "Long-tailed wyvern"
-    ],
-    "slayerMasters": [
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Gargoyle",
-    "slayerLevel": 75,
+    "taskid": 46,
     "locations": [
       "Slayer Tower"
     ],
     "itemsRequired": [
-      {
-        "name": "Rock hammer",
-        "icon": "Rock hammer.png"
-      },
-      {
-        "name": "Rock thrownhammer",
-        "icon": "Rock thrownhammer.png"
-      }
+      "Rock hammer",
+      "Rock thrownhammer"
     ],
     "attributes": [
       "None"
@@ -1346,22 +913,14 @@
     ],
     "alternatives": [
       "Grotesque Guardians"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Ghost",
-    "slayerLevel": 1,
+    "taskid": 12,
     "locations": [
       "Varrock Sewers",
       "Draynor Manor",
-      "Melzar\u0027s Maze",
+      "Melzar's Maze",
       "Stronghold of Security",
       "Taverley Dungeon",
       "West Ardougne (graveyard)",
@@ -1374,9 +933,7 @@
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Undead"
@@ -1386,22 +943,15 @@
     ],
     "alternatives": [
       "Tortured soul"
-    ],
-    "slayerMasters": [
-      "Turael",
-      "Mazchna"
     ]
   },
   {
-    "monster": "Ghoul",
-    "slayerLevel": 1,
+    "taskid": 23,
     "locations": [
       "West of Canifis"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1411,15 +961,10 @@
     ],
     "alternatives": [
       "Ghoul Champion"
-    ],
-    "slayerMasters": [
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Goblin",
-    "slayerLevel": 1,
+    "taskid": 2,
     "locations": [
       "Lumbridge Caves",
       "Goblin Village",
@@ -1436,9 +981,7 @@
       "east of Barbarian Village"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1451,14 +994,10 @@
       "Sergeant Strongstack",
       "Sergeant Grimspike",
       "Sergeant Steelwill"
-    ],
-    "slayerMasters": [
-      "Turael"
     ]
   },
   {
-    "monster": "Greater demon",
-    "slayerLevel": 1,
+    "taskid": 29,
     "locations": [
       "Entrana Dungeon",
       "Brimhaven Dungeon",
@@ -1469,9 +1008,7 @@
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Demon"
@@ -1480,41 +1017,24 @@
       "Melee"
     ],
     "alternatives": [
-      "K\u0027ril Tsutsaroth",
+      "K'ril Tsutsaroth",
       "Tstanon Karlak",
       "Skotizo"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Green dragon",
-    "slayerLevel": 1,
+    "taskid": 24,
     "locations": [
-      "West of the Dark Warriors\u0027 Fortress",
+      "West of the Dark Warriors' Fortress",
       "north of the Graveyard of Shadows",
       "South of the Lava Maze",
       "South of Venenatis",
       "Corsair Cove Dungeon (Requires completion of Dragon Slayer II)"
     ],
     "itemsRequired": [
-      {
-        "name": "Anti-dragon shield",
-        "icon": "Anti-dragon shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Antifire potion(4)",
-        "icon": "Antifire potion(4).png"
-      }
+      "Anti-dragon shield",
+      "Dragonfire shield",
+      "Antifire potion(4)"
     ],
     "attributes": [
       "Draconic",
@@ -1528,23 +1048,15 @@
       "Baby green dragon",
       "Brutal green dragon",
       "Elvarg"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Harpie bug swarm",
-    "slayerLevel": 33,
+    "taskid": 70,
     "locations": [
       "Karamja"
     ],
     "itemsRequired": [
-      {
-        "name": "Lit bug lantern",
-        "icon": "Lit bug lantern.png"
-      }
+      "Lit bug lantern"
     ],
     "attributes": [
       "None"
@@ -1554,15 +1066,10 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar"
     ]
   },
   {
-    "monster": "Hellhound",
-    "slayerLevel": 1,
+    "taskid": 31,
     "locations": [
       "Taverley Dungeon",
       "east of the Deserted Keep",
@@ -1574,9 +1081,7 @@
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1586,19 +1091,10 @@
     ],
     "alternatives": [
       "Cerberus"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Hill Giant",
-    "slayerLevel": 1,
+    "taskid": 14,
     "locations": [
       "Deep Wilderness Dungeon",
       "Edgeville Dungeon",
@@ -1611,9 +1107,7 @@
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1624,16 +1118,10 @@
     "alternatives": [
       "Giant Champion",
       "Cyclops"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Hobgoblin",
-    "slayerLevel": 1,
+    "taskid": 21,
     "locations": [
       "Asgarnian Ice Dungeon",
       "Crandor",
@@ -1649,9 +1137,7 @@
       "Witchaven Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1661,22 +1147,15 @@
     ],
     "alternatives": [
       "Hobgoblin Champion"
-    ],
-    "slayerMasters": [
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Hydra",
-    "slayerLevel": 95,
+    "taskid": 113,
     "locations": [
       "Karuulm Slayer Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Draconic"
@@ -1688,23 +1167,17 @@
     ],
     "alternatives": [
       "Alchemical Hydra"
-    ],
-    "slayerMasters": [
-      "Konar quo Maten"
     ]
   },
   {
-    "monster": "Icefiend",
-    "slayerLevel": 1,
+    "taskid": 75,
     "locations": [
       "Ice Mountain",
       "God Wars Dungeon",
       "Wilderness God Wars Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1716,23 +1189,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Turael"
     ]
   },
   {
-    "monster": "Ice giant",
-    "slayerLevel": 1,
+    "taskid": 15,
     "locations": [
       "Asgarnian Ice Caves",
       "Frozen Waste Plateau",
       "White Wolf Mountain"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1742,24 +1209,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Ice warrior",
-    "slayerLevel": 1,
+    "taskid": 19,
     "locations": [
       "White Wolf Mountain",
       "Frozen Waste Plateau",
       "Asgarnian Ice Caves"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1769,23 +1229,15 @@
     ],
     "alternatives": [
       "Icelord"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Infernal Mage",
-    "slayerLevel": 45,
+    "taskid": 40,
     "locations": [
       "Slayer tower"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1795,32 +1247,18 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar"
     ]
   },
   {
-    "monster": "Iron dragon",
-    "slayerLevel": 1,
+    "taskid": 59,
     "locations": [
       "Brimhaven Dungeon",
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "Anti-dragon shield",
-        "icon": "Anti-dragon shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Antifire potion(4)",
-        "icon": "Antifire potion(4).png"
-      }
+      "Anti-dragon shield",
+      "Dragonfire shield",
+      "Antifire potion(4)"
     ],
     "attributes": [
       "Draconic",
@@ -1832,24 +1270,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Jelly",
-    "slayerLevel": 52,
+    "taskid": 50,
     "locations": [
       "Fremennik Slayer Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1859,23 +1288,15 @@
     ],
     "alternatives": [
       "Warped Jelly"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten"
     ]
   },
   {
-    "monster": "Jungle horror",
-    "slayerLevel": 1,
+    "taskid": 81,
     "locations": [
-      "Mos Le\u0027Harmless"
+      "Mos Le'Harmless"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -1885,23 +1306,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar"
     ]
   },
   {
-    "monster": "Kalphite",
-    "slayerLevel": 1,
+    "taskid": 53,
     "locations": [
       "Kalphite Lair",
       "Kalphite Cave"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Kalphite"
@@ -1914,28 +1328,15 @@
       "Kalphite Worker",
       "Kalphite Soldier",
       "Kalphite Guardian"
-    ],
-    "slayerMasters": [
-      "Turael",
-      "Mazchna",
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Killerwatt",
-    "slayerLevel": 37,
+    "taskid": 73,
     "locations": [
       "Killerwatt plane"
     ],
     "itemsRequired": [
-      {
-        "name": "Insulated boots",
-        "icon": "Insulated boots.png"
-      }
+      "Insulated boots"
     ],
     "attributes": [
       "None"
@@ -1946,36 +1347,19 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Kurask",
-    "slayerLevel": 70,
+    "taskid": 45,
     "locations": [
       "Fremennik Slayer Dungeon",
       "Iorwerth Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Leaf-bladed spear",
-        "icon": "Leaf-bladed spear.png"
-      },
-      {
-        "name": "Magic Dart",
-        "icon": "Magic Dart.png"
-      },
-      {
-        "name": "Broad arrows",
-        "icon": "Broad arrows.png"
-      },
-      {
-        "name": "Broad bolts",
-        "icon": "Broad bolts.png"
-      }
+      "Leaf-bladed spear",
+      "Magic Dart",
+      "Broad arrows",
+      "Broad bolts"
     ],
     "attributes": [
       "Leafy"
@@ -1985,33 +1369,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Duradel"
     ]
   },
   {
-    "monster": "Lava dragon",
-    "slayerLevel": 1,
+    "taskid": 104,
     "locations": [
       "Lava Dragon Isle"
     ],
     "itemsRequired": [
-      {
-        "name": "Anti-dragon shield",
-        "icon": "Anti-dragon shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Antifire potion(4)",
-        "icon": "Antifire potion(4).png"
-      }
+      "Anti-dragon shield",
+      "Dragonfire shield",
+      "Antifire potion(4)"
     ],
     "attributes": [
       "Draconic",
@@ -2023,27 +1391,21 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia"
     ]
   },
   {
-    "monster": "Lesser demon",
-    "slayerLevel": 1,
+    "taskid": 28,
     "locations": [
-      "Wizards\u0027 Tower",
+      "Wizards' Tower",
       "Karamja Dungeon",
       "Crandor",
-      "Melzar\u0027s Maze",
+      "Melzar's Maze",
       "Demonic Ruins",
       "Lava Maze",
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Demon"
@@ -2052,25 +1414,17 @@
       "Melee"
     ],
     "alternatives": [
-      "Zakl\u0027n Gritch"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Vannaka",
-      "Chaeldar"
+      "Zakl'n Gritch"
     ]
   },
   {
-    "monster": "Lizardman",
-    "slayerLevel": 1,
+    "taskid": 90,
     "locations": [
       "Lizardmen Settlement",
       "Lizardman canyon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2082,25 +1436,15 @@
     "alternatives": [
       "Lizardman brute",
       "Lizardman shaman"
-    ],
-    "slayerMasters": [
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Lizard",
-    "slayerLevel": 22,
+    "taskid": 68,
     "locations": [
       "Kharidian Desert"
     ],
     "itemsRequired": [
-      {
-        "name": "Ice cooler",
-        "icon": "Ice cooler.png"
-      }
+      "Ice cooler"
     ],
     "attributes": [
       "None"
@@ -2113,25 +1457,15 @@
       "Lizard",
       "Small Lizard",
       "Sulphur Lizard"
-    ],
-    "slayerMasters": [
-      "Turael",
-      "Mazchna",
-      "Chaeldar",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Magic axe",
-    "slayerLevel": 1,
+    "taskid": 91,
     "locations": [
       "Magic Axe Hut"
     ],
     "itemsRequired": [
-      {
-        "name": "Lockpick",
-        "icon": "Lockpick.png"
-      }
+      "Lockpick"
     ],
     "attributes": [
       "None"
@@ -2141,21 +1475,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia"
     ]
   },
   {
-    "monster": "Mammoth",
-    "slayerLevel": 1,
+    "taskid": 99,
     "locations": [
       "West of the Chaos Temple"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2165,21 +1493,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia"
     ]
   },
   {
-    "monster": "Minotaur",
-    "slayerLevel": 1,
+    "taskid": 76,
     "locations": [
       "Stronghold of Security"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2189,30 +1511,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Turael"
     ]
   },
   {
-    "monster": "Mithril dragon",
-    "slayerLevel": 1,
+    "taskid": 93,
     "locations": [
       "Ancient Cavern"
     ],
     "itemsRequired": [
-      {
-        "name": "Anti-dragon shield",
-        "icon": "Anti-dragon shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Antifire potion(4)",
-        "icon": "Antifire potion(4).png"
-      }
+      "Anti-dragon shield",
+      "Dragonfire shield",
+      "Antifire potion(4)"
     ],
     "attributes": [
       "Draconic",
@@ -2226,24 +1535,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Mogre",
-    "slayerLevel": 32,
+    "taskid": 67,
     "locations": [
       "Mudskipper Point"
     ],
     "itemsRequired": [
-      {
-        "name": "Fishing explosive",
-        "icon": "Fishing explosive.png"
-      }
+      "Fishing explosive"
     ],
     "attributes": [
       "None"
@@ -2253,23 +1553,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Molanisk",
-    "slayerLevel": 39,
+    "taskid": 87,
     "locations": [
       "Dorgesh-Kaan South Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Slayer bell",
-        "icon": "Slayer bell.png"
-      }
+      "Slayer bell"
     ],
     "attributes": [
       "None"
@@ -2279,23 +1571,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka"
     ]
   },
   {
-    "monster": "Monkey",
-    "slayerLevel": 1,
+    "taskid": 1,
     "locations": [
       "Karamja",
-      "Mos Le\u0027Harmless",
+      "Mos Le'Harmless",
       "Ardougne Zoo"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2307,14 +1593,10 @@
       "Monkey Guard",
       "Monkey Archer",
       "Zombie monkey and more (like Padulah)"
-    ],
-    "slayerMasters": [
-      "Turael"
     ]
   },
   {
-    "monster": "Moss giant",
-    "slayerLevel": 1,
+    "taskid": 17,
     "locations": [
       "Brimhaven Dungeon",
       "Crandor",
@@ -2322,14 +1604,12 @@
       "Moss Giant Island",
       "Wilderness",
       "Varrock Sewers",
-      "Pirates\u0027 Cove",
-      "Glarial\u0027s Tomb",
+      "Pirates' Cove",
+      "Glarial's Tomb",
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2339,23 +1619,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Nechryael",
-    "slayerLevel": 80,
+    "taskid": 52,
     "locations": [
       "Slayer Tower",
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Demon"
@@ -2365,23 +1638,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Ogre",
-    "slayerLevel": 1,
+    "taskid": 20,
     "locations": [
-      "Gu\u0027Tanoth",
+      "Gu'Tanoth",
       "west of Yanille",
       "south of Castle Wars",
-      "south of Gu\u0027Tanoth",
-      "Toban \u0027s Island",
+      "south of Gu'Tanoth",
+      "Toban 's Island",
       "Chaos Druid Tower dungeon",
       "Clock Tower Dungeon",
       "Witchaven Dungeon",
@@ -2390,9 +1656,7 @@
       "God Wars Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2405,21 +1669,15 @@
       "Enclave guard",
       "Ogress Shaman",
       "Ogress Warrior"
-    ],
-    "slayerMasters": [
-      "Vannaka"
     ]
   },
   {
-    "monster": "Otherworldly being",
-    "slayerLevel": 1,
+    "taskid": 55,
     "locations": [
       "Zanaris"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2429,21 +1687,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka"
     ]
   },
   {
-    "monster": "Pirate",
-    "slayerLevel": 1,
+    "taskid": 120,
     "locations": [
-      "Pirates\u0027 Hideout"
+      "Pirates' Hideout"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2453,14 +1705,10 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia"
     ]
   },
   {
-    "monster": "Pyrefiend",
-    "slayerLevel": 30,
+    "taskid": 47,
     "locations": [
       "Fremennik Slayer Dungeon",
       "Smoke Dungeon",
@@ -2469,9 +1717,7 @@
       "Iorwerth Dungeon,"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Fiery"
@@ -2481,22 +1727,15 @@
     ],
     "alternatives": [
       "Pyrelord"
-    ],
-    "slayerMasters": [
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Rat",
-    "slayerLevel": 1,
+    "taskid": 3,
     "locations": [
       "Throughout Gielinor"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2510,31 +1749,18 @@
       "Crypt rat",
       "Brine rat",
       "Hell-Rat Behemoth"
-    ],
-    "slayerMasters": [
-      "Turael"
     ]
   },
   {
-    "monster": "Red dragon",
-    "slayerLevel": 1,
+    "taskid": 26,
     "locations": [
       "Brimhaven Dungeon",
       "Catacombs of Kourend (brutal variant)"
     ],
     "itemsRequired": [
-      {
-        "name": "Anti-dragon shield",
-        "icon": "Anti-dragon shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Antifire potion(4)",
-        "icon": "Antifire potion(4).png"
-      }
+      "Anti-dragon shield",
+      "Dragonfire shield",
+      "Antifire potion(4)"
     ],
     "attributes": [
       "Draconic",
@@ -2547,23 +1773,15 @@
     "alternatives": [
       "Baby red dragons",
       "Brutal red dragons"
-    ],
-    "slayerMasters": [
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Revenant",
-    "slayerLevel": 1,
+    "taskid": 107,
     "locations": [
       "Revenant Caves"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Undead"
@@ -2575,24 +1793,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia"
     ]
   },
   {
-    "monster": "Rockslug",
-    "slayerLevel": 20,
+    "taskid": 51,
     "locations": [
       "Fremennik Slayer Dungeon",
       "Lumbridge Swamp Caves",
       "Dorgesh-Kaan South Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Bag of salt",
-        "icon": "Bag of salt.png"
-      }
+      "Bag of salt"
     ],
     "attributes": [
       "None"
@@ -2602,23 +1813,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Rogue",
-    "slayerLevel": 1,
+    "taskid": 100,
     "locations": [
-      "Rogues\u0027 Castle",
+      "Rogues' Castle",
       "southwest of Mage Arena"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2628,30 +1832,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia"
     ]
   },
   {
-    "monster": "Rune Dragon",
-    "slayerLevel": 1,
+    "taskid": 109,
     "locations": [
       "Lithkren"
     ],
     "itemsRequired": [
-      {
-        "name": "Anti-dragon shield",
-        "icon": "Anti-dragon shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Super antifire potion(4)",
-        "icon": "Super antifire potion(4).png"
-      }
+      "Anti-dragon shield",
+      "Dragonfire shield",
+      "Super antifire potion(4)"
     ],
     "attributes": [
       "Draconic",
@@ -2665,24 +1856,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Scabarite",
-    "slayerLevel": 1,
+    "taskid": 85,
     "locations": [
       "Dungeon under Sophanem",
       "dungeon east of the Agility Pyramid"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Kalphite"
@@ -2696,14 +1879,10 @@
       "Locust riders",
       "Scarab mages",
       "Scarab swarms"
-    ],
-    "slayerMasters": [
-      "Nieve"
     ]
   },
   {
-    "monster": "Scorpion",
-    "slayerLevel": 1,
+    "taskid": 7,
     "locations": [
       "Al-Kharid Mine",
       "Dwarven mines",
@@ -2714,9 +1893,7 @@
       "above Karamja Volcano"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2730,23 +1907,15 @@
       "Pit Scorpion",
       "Scorpia",
       "Lobstrosity"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Turael",
-      "Mazchna"
     ]
   },
   {
-    "monster": "Sea snake",
-    "slayerLevel": 1,
+    "taskid": 71,
     "locations": [
-      "Miscellania \u0026 Etceteria Dungeon"
+      "Miscellania & Etceteria Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2758,24 +1927,18 @@
       "Sea Snake Hatchling",
       "Sea Snake Young",
       "Giant Sea Snake"
-    ],
-    "slayerMasters": [
-      "Vannaka"
     ]
   },
   {
-    "monster": "Shade",
-    "slayerLevel": 1,
+    "taskid": 64,
     "locations": [
-      "Mort\u0027ton",
+      "Mort'ton",
       "Shade Catacombs",
       "Temple Trekking",
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Shade",
@@ -2789,22 +1952,15 @@
       "Phryn",
       "Riyl",
       "Asyn and Fiyr shades"
-    ],
-    "slayerMasters": [
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Shadow warrior",
-    "slayerLevel": 1,
+    "taskid": 32,
     "locations": [
-      "Legends\u0027 Guild basement"
+      "Legends' Guild basement"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2814,31 +1970,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar"
     ]
   },
   {
-    "monster": "Skeletal Wyvern",
-    "slayerLevel": 72,
+    "taskid": 72,
     "locations": [
       "Asgarnian Ice Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Elemental shield",
-        "icon": "Elemental shield.png"
-      },
-      {
-        "name": "Mind shield",
-        "icon": "Mind shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      }
+      "Elemental shield",
+      "Mind shield",
+      "Dragonfire shield"
     ],
     "attributes": [
       "Draconic"
@@ -2850,16 +1992,10 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Skeleton",
-    "slayerLevel": 1,
+    "taskid": 11,
     "locations": [
       "Edgeville Dungeon",
       "Draynor Sewers",
@@ -2872,15 +2008,13 @@
       "Waterfall Dungeon",
       "Wilderness Agility Course",
       "Barrows",
-      "Melzar\u0027s Maze",
+      "Melzar's Maze",
       "Wilderness Volcano",
       "Ape Atoll Dungeon",
       "Underground Pass"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Undead"
@@ -2890,29 +2024,17 @@
     ],
     "alternatives": [
       "Skeleton Champion",
-      "Vet\u0027ion"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Turael",
-      "Mazchna"
+      "Vet'ion"
     ]
   },
   {
-    "monster": "Smoke devil",
-    "slayerLevel": 93,
+    "taskid": 95,
     "locations": [
       "Smoke Devil Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Facemask",
-        "icon": "Facemask.png"
-      },
-      {
-        "name": "Slayer helmet",
-        "icon": "Slayer helmet.png"
-      }
+      "Facemask",
+      "Slayer helmet"
     ],
     "attributes": [
       "None"
@@ -2923,28 +2045,16 @@
     "alternatives": [
       "Thermonuclear smoke devil",
       "Nuclear smoke devil"
-    ],
-    "slayerMasters": [
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Sourhog",
-    "slayerLevel": 1,
+    "taskid": 121,
     "locations": [
       "Sourhog Cave"
     ],
     "itemsRequired": [
-      {
-        "name": "Reinforced goggles",
-        "icon": "Reinforced goggles.png"
-      },
-      {
-        "name": "Slayer helmet",
-        "icon": "Slayer helmet.png"
-      }
+      "Reinforced goggles",
+      "Slayer helmet"
     ],
     "attributes": [
       "None"
@@ -2955,17 +2065,13 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Turael"
     ]
   },
   {
-    "monster": "Spider",
-    "slayerLevel": 1,
+    "taskid": 4,
     "locations": [
-      "Melzar\u0027s Maze",
-      "Sorceress \u0027s house",
+      "Melzar's Maze",
+      "Sorceress 's house",
       "Lumbridge Castle basement",
       "behind Lumbridge Castle",
       "Stronghold of Security",
@@ -2976,9 +2082,7 @@
       "Underground Pass"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -2998,23 +2102,16 @@
       "Temple Spider",
       "Sarachnis",
       "Venenatis"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Turael"
     ]
   },
   {
-    "monster": "Spiritual creature",
-    "slayerLevel": 1,
+    "taskid": 89,
     "locations": [
       "God Wars Dungeon",
       "Wilderness God Wars Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -3024,35 +2121,18 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Vannaka",
-      "Chaeldar",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Steel dragon",
-    "slayerLevel": 1,
+    "taskid": 60,
     "locations": [
       "Brimhaven Dungeon",
       "Catacombs of Kourend"
     ],
     "itemsRequired": [
-      {
-        "name": "Anti-dragon shield",
-        "icon": "Anti-dragon shield.png"
-      },
-      {
-        "name": "Dragonfire shield",
-        "icon": "Dragonfire shield.png"
-      },
-      {
-        "name": "Antifire potion(4)",
-        "icon": "Antifire potion(4).png"
-      }
+      "Anti-dragon shield",
+      "Dragonfire shield",
+      "Antifire potion(4)"
     ],
     "attributes": [
       "Draconic",
@@ -3064,25 +2144,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Suqah",
-    "slayerLevel": 1,
+    "taskid": 83,
     "locations": [
       "Lunar Isle"
     ],
     "itemsRequired": [
-      {
-        "name": "None (Seal of passage recommended to communicate with Moon Clan people)",
-        "icon": "None (Seal of passage recommended to communicate with Moon Clan people).png"
-      }
+      "None (Seal of passage recommended to communicate with Moon Clan people)"
     ],
     "attributes": [
       "None"
@@ -3093,22 +2163,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Terror dog",
-    "slayerLevel": 40,
+    "taskid": 86,
     "locations": [
-      "Tarn\u0027s Lair"
+      "Tarn's Lair"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -3118,14 +2181,10 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka"
     ]
   },
   {
-    "monster": "Troll",
-    "slayerLevel": 1,
+    "taskid": 18,
     "locations": [
       "Trollheim",
       "Tunnel outside of Keldagrim",
@@ -3134,9 +2193,7 @@
       "Ice Path north of Trollheim (Ice trolls)"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -3152,38 +2209,18 @@
       "Male and Female",
       "Ice troll",
       "River troll"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Turoth",
-    "slayerLevel": 55,
+    "taskid": 36,
     "locations": [
       "Fremennik Slayer Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "Leaf-bladed spear",
-        "icon": "Leaf-bladed spear.png"
-      },
-      {
-        "name": "Magic Dart",
-        "icon": "Magic Dart.png"
-      },
-      {
-        "name": "Broad arrows",
-        "icon": "Broad arrows.png"
-      },
-      {
-        "name": "Broad bolts",
-        "icon": "Broad bolts.png"
-      }
+      "Leaf-bladed spear",
+      "Magic Dart",
+      "Broad arrows",
+      "Broad bolts"
     ],
     "attributes": [
       "Leafy"
@@ -3193,24 +2230,15 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka",
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve"
     ]
   },
   {
-    "monster": "TzHaar",
-    "slayerLevel": 1,
+    "taskid": 96,
     "locations": [
       "Mor Ul Rek"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -3223,16 +2251,10 @@
     "alternatives": [
       "TzTok-Jad",
       "TzKal-Zuk"
-    ],
-    "slayerMasters": [
-      "Chaeldar",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Vampyre",
-    "slayerLevel": 1,
+    "taskid": 34,
     "locations": [
       "God Wars Dungeon",
       "Wilderness God Wars Dungeon",
@@ -3240,9 +2262,7 @@
       "near Abandoned Mine"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Vampyre"
@@ -3252,27 +2272,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Mazchna",
-      "Vannaka"
     ]
   },
   {
-    "monster": "Wall beast",
-    "slayerLevel": 35,
+    "taskid": 61,
     "locations": [
       "Lumbridge Swamp Caves"
     ],
     "itemsRequired": [
-      {
-        "name": "Spiny helmet",
-        "icon": "Spiny helmet.png"
-      },
-      {
-        "name": "Slayer helmet",
-        "icon": "Slayer helmet.png"
-      }
+      "Spiny helmet",
+      "Slayer helmet"
     ],
     "attributes": [
       "None"
@@ -3282,24 +2291,16 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Mazchna",
-      "Vannaka",
-      "Chaeldar"
     ]
   },
   {
-    "monster": "Waterfiend",
-    "slayerLevel": 1,
+    "taskid": 88,
     "locations": [
       "Ancient Cavern",
       "Kraken Cove"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -3310,24 +2311,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Konar quo Maten",
-      "Duradel"
     ]
   },
   {
-    "monster": "Werewolf",
-    "slayerLevel": 1,
+    "taskid": 33,
     "locations": [
       "Canifis",
       "God Wars Dungeon",
       "Wilderness God Wars Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -3337,23 +2331,17 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Vannaka"
     ]
   },
   {
-    "monster": "Wolf",
-    "slayerLevel": 1,
+    "taskid": 9,
     "locations": [
       "Stronghold of Security",
       "White Wolf Mountain",
       "Feldip Hills"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "None"
@@ -3367,22 +2355,15 @@
       "Jungle wolf",
       "Desert Wolf",
       "Ice Wolf"
-    ],
-    "slayerMasters": [
-      "Turael",
-      "Mazchna"
     ]
   },
   {
-    "monster": "Wyrm",
-    "slayerLevel": 62,
+    "taskid": 111,
     "locations": [
       "Karuulm Slayer Dungeon"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Draconic"
@@ -3393,17 +2374,10 @@
     ],
     "alternatives": [
       "None"
-    ],
-    "slayerMasters": [
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   },
   {
-    "monster": "Zombie",
-    "slayerLevel": 1,
+    "taskid": 10,
     "locations": [
       "Tree Gnome Village dungeon",
       "Entrana Dungeon",
@@ -3411,14 +2385,12 @@
       "Graveyard of Shadows",
       "Stronghold of Security",
       "Varrock Sewers",
-      "Wizards\u0027 Guild basement",
+      "Wizards' Guild basement",
       "Draynor Sewers",
       "Lair of Tarn Razorlor"
     ],
     "itemsRequired": [
-      {
-        "name": "None"
-      }
+      "None"
     ],
     "attributes": [
       "Undead"
@@ -3428,29 +2400,17 @@
     ],
     "alternatives": [
       "Any zombie-class except Zogres and Zombie monkeys"
-    ],
-    "slayerMasters": [
-      "Krystilia",
-      "Turael",
-      "Mazchna"
     ]
   },
   {
-    "monster": "Zygomite",
-    "slayerLevel": 57,
+    "taskid": 74,
     "locations": [
       "Fossil Island",
       "Zanaris"
     ],
     "itemsRequired": [
-      {
-        "name": "Fungicide spray",
-        "icon": "Fungicide spray.png"
-      },
-      {
-        "name": "Fungicide",
-        "icon": "Fungicide.png"
-      }
+      "Fungicide spray",
+      "Fungicide"
     ],
     "attributes": [
       "None"
@@ -3461,12 +2421,6 @@
     ],
     "alternatives": [
       "Ancient Zygomite"
-    ],
-    "slayerMasters": [
-      "Chaeldar",
-      "Konar quo Maten",
-      "Nieve",
-      "Duradel"
     ]
   }
 ]
