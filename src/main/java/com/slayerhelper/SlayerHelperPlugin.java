@@ -11,6 +11,7 @@ import net.runelite.client.ui.ClientToolbar;
 import net.runelite.client.ui.NavigationButton;
 import net.runelite.client.util.ImageUtil;
 import javax.inject.Inject;
+import javax.swing.*;
 import java.awt.image.BufferedImage;
 
 @Slf4j
@@ -34,10 +35,14 @@ public class SlayerHelperPlugin extends Plugin {
 
 	@Override
 	protected void startUp() {
-		clientThread.invoke(() -> slayerTaskRepository.load());
 		slayerPanel = injector.getInstance(SlayerPluginPanel.class);
 		navButton = getNavButton();
 		clientToolbar.addNavigation(navButton);
+
+		clientThread.invoke(() -> {
+			slayerTaskRepository.load();
+			SwingUtilities.invokeLater(() -> slayerPanel.refresh());
+		});
 	}
 
 	@Override
