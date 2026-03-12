@@ -71,8 +71,4 @@ public class Tab {
         this.icon = icon;
         this.content = contentPanel;
     }
-
-    private String convertStringsToLineSeparatedString(String[] strings) {
-        return String.join(System.lineSeparator(), strings);
-    }
 }

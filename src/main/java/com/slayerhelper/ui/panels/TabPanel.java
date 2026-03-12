@@ -11,10 +11,9 @@ public class TabPanel {
     @Getter
     private final JTabbedPane tabbedPane = new JTabbedPane();
 
-    public TabPanel() {
-        tabbedPane.setPreferredSize(new Dimension(200, 250));
-        // Set the tab placement to TOP for horizontal tabs
-        tabbedPane.setTabPlacement(JTabbedPane.LEFT);
+    public TabPanel(Integer tabPlacement) {
+        tabbedPane.setPreferredSize(new Dimension(250, 300));
+        tabbedPane.setTabPlacement(tabPlacement);
     }
 
     private void addTab(Tab tab) {

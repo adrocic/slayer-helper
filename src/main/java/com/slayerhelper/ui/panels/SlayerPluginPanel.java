@@ -22,10 +22,11 @@ import java.util.List;
 @Slf4j
 public class SlayerPluginPanel extends PluginPanel {
 
+    private final JPanel detailPanel = new JPanel();
     private final SlayerTasksFetcher slayerTasksFetcher;
     private final SearchBar searchBar;
     private final ItemManager itemManager;
-    private DefaultListModel<SlayerTask> listModel = new DefaultListModel<>();
+    private final DefaultListModel<SlayerTask> listModel = new DefaultListModel<>();
     private final String[] tabImageNamesWithExtensions = {
             "world_map.png", "inventory.png", "protect_from_all.png", "combat.png", "slayer_icon.png"
     };
@@ -38,32 +39,14 @@ public class SlayerPluginPanel extends PluginPanel {
         createTaskListPanel(new ArrayList<>());
     }
 
-    private JPanel createHeaderPanel(SlayerTask task) {
-        Font font = new Font(Font.SANS_SERIF, Font.PLAIN, 15);
-        String monsterName = task.getMonster();
-        String monsterFileName = task.getMonsterFileName();
-
-        ImageIcon imageIcon;
-        try {
-            BufferedImage img = ImageUtil.loadImageResource(getClass(), monsterFileName);
-            BufferedImage resizedImg = ImageUtil.resizeImage(img, img.getWidth() / 2, img.getHeight() / 2);
-
-            imageIcon = new ImageIcon(resizedImg);
-        } catch (NullPointerException e) {
-            log.info(String.format("Couldn't find image with name... %s", monsterFileName), e);
-            return new HeaderPanel(font, monsterName, Color.ORANGE, SwingConstants.CENTER).getHeaderPanel();
-        }
-
-        return new HeaderPanel(font, monsterName, Color.CYAN, imageIcon, SwingConstants.CENTER).getHeaderPanel();
-    }
-
     private TabPanel createTabPanel(SlayerTask task) {
-        TabPanel tabPanel = new TabPanel();
+        TabPanel tabPanel = new TabPanel(JTabbedPane.TOP);
 
         List<ImageIcon> icons = new ArrayList<>();
         for (String imageNameWithExtension : tabImageNamesWithExtensions) {
             BufferedImage image = ImageUtil.loadImageResource(getClass(), String.format("/images/%s", imageNameWithExtension));
-            ImageIcon imageIcon = new ImageIcon(image);
+            BufferedImage resized = ImageUtil.resizeImage(image, 20, 20);
+            ImageIcon imageIcon = new ImageIcon(resized);
             icons.add(imageIcon);
         }
 
@@ -79,28 +62,51 @@ public class SlayerPluginPanel extends PluginPanel {
     }
 
     public void createTaskListPanel(Collection<SlayerTask> tasks) {
-        removeComponents(null);
+        removeAllComponents(null);
+        setLayout(new BorderLayout());
+
+        // ====================================================================================
+        // The Search Bar and Icon/Logo
+        // ====================================================================================
+        JPanel topPanel = new JPanel();
+        topPanel.setLayout(new BoxLayout(topPanel, BoxLayout.Y_AXIS));
+        topPanel.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 0));
+
         BufferedImage image = ImageUtil.loadImageResource(getClass(), String.format("/images/slayer_icon.png"));
         ImageIcon imageIcon = new ImageIcon(image);
+
         JLabel searchBarIcon = new JLabel();
+        searchBarIcon.setIcon(imageIcon);
+        searchBarIcon.setAlignmentX(Component.CENTER_ALIGNMENT);
         searchBarIcon.setVerticalAlignment(SwingConstants.CENTER);
         searchBarIcon.setHorizontalAlignment(SwingConstants.CENTER);
-        searchBarIcon.setIcon(imageIcon);
-        add(searchBarIcon);
+
         JLabel searchBarTitle = new JLabel("~ Slayer Helper ~");
+        searchBarTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
         searchBarTitle.setForeground(Color.ORANGE);
         searchBarTitle.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 15));
-        searchBarTitle.setHorizontalAlignment(SwingConstants.CENTER);
-        searchBarTitle.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
+        searchBarTitle.setBorder(BorderFactory.createEmptyBorder(4, 0, 4, 0));
+
         JLabel searchBarHelperMsg = new JLabel("Search for a monster...");
+        searchBarHelperMsg.setAlignmentX(Component.CENTER_ALIGNMENT);
         searchBarHelperMsg.setForeground(Color.WHITE);
         searchBarHelperMsg.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 10));
-        add(searchBarTitle);
-        add(searchBarHelperMsg);
-        add(searchBar.getSearchBar());
+        searchBarHelperMsg.setBorder(BorderFactory.createEmptyBorder(0, 0, 6, 0));
+
+        topPanel.add(searchBarIcon);
+        topPanel.add(searchBarTitle);
+        topPanel.add(searchBarHelperMsg);
+        topPanel.add(searchBar.getSearchBar());
+        topPanel.setName("searchBarAndLogo");
+
         this.clearFilter();
         this.updateListModel(tasks);
 
+        add(topPanel, BorderLayout.NORTH);
+
+        // ====================================================================================
+        // The Scrollable List
+        // ====================================================================================
         JList<SlayerTask> monsterNames = new JList<>(listModel);
         monsterNames.setCellRenderer(new SlayerTasksRenderer());
         monsterNames.setFocusable(true);
@@ -115,34 +121,76 @@ public class SlayerPluginPanel extends PluginPanel {
             }
         });
 
-        add(monsterNames);
+        JScrollPane scrollPane = new JScrollPane(monsterNames);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        scrollPane.setName("scrollableList");
+
+        add(scrollPane, BorderLayout.CENTER);
+
+        // ====================================================================================
+        // The details view below the list - opened after clicking a monster
+        // ====================================================================================
+        add(detailPanel, BorderLayout.SOUTH);
+
+        // ====================================================================================
+        // End
+        // ====================================================================================
         revalidate();
         repaint();
     }
 
     private void openTask(SlayerTask task) {
-        removeComponents(null);
-        JButton backButton = new JButton("<- Back");
-        backButton.setFocusPainted(false);
-        backButton.setPreferredSize(new Dimension(50, 30));
-        backButton.addActionListener(e -> {
-            closeTask();
-            remove(backButton);
-        });
-        add(backButton);
-        add(createTabPanel(task).getTabbedPane());
-        add(createHeaderPanel(task));
-        backButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        updateListModel(List.of(task));
+        searchBar.getSearchBar().setText(task.getMonster());
+        detailPanel.removeAll();
+
+        detailPanel.setLayout(new BoxLayout(detailPanel, BoxLayout.Y_AXIS));
+
+        // Close button
+        JButton closeButton = new JButton("Close");
+        closeButton.setFocusPainted(false);
+        closeButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        closeButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        closeButton.addActionListener(e -> closeTask());
+        // Margin (around button)
+        JPanel closeWrapper = new JPanel();
+        closeWrapper.setBackground(new Color(30, 30, 30));
+        closeWrapper.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 0));
+        closeWrapper.add(closeButton);
+
+        // Monster
+        JPanel monsterPanel = new JPanel(new BorderLayout());
+        monsterPanel.setBackground(new Color(30, 30, 30));
+        try {
+            BufferedImage img = ImageUtil.loadImageResource(getClass(), task.getMonsterFileName());
+            BufferedImage resizedImg = ImageUtil.resizeImage(img, img.getWidth() / 3, img.getHeight() / 3);
+            JLabel monsterLabel = new JLabel(new ImageIcon(resizedImg));
+            monsterLabel.setHorizontalAlignment(SwingConstants.CENTER);
+            monsterPanel.add(monsterLabel, BorderLayout.CENTER);
+        } catch (NullPointerException e) {
+            log.info("Couldn't find monster image: {}", task.getMonsterFileName());
+            JLabel fallback = new JLabel(task.getMonster(), SwingConstants.CENTER);
+            fallback.setForeground(Color.ORANGE);
+            monsterPanel.add(fallback, BorderLayout.CENTER);
+        }
+
+        detailPanel.add(createTabPanel(task).getTabbedPane());
+        detailPanel.add(monsterPanel);
+        detailPanel.add(closeWrapper);
+
+        revalidate();
+        repaint();
     }
 
     private void closeTask() {
-        // back to an empty list
-        createTaskListPanel(new ArrayList<>());
+        clearFilter();
+        detailPanel.removeAll();
+        revalidate();
+        repaint();
     }
 
-    private void removeComponents(@Nullable Component[] excludedComponents) {
+    private void removeAllComponents(@Nullable Component[] excludedComponents) {
         Component[] components = this.getComponents();
-
         for (Component component : components) {
             if (excludedComponents != null && Arrays.stream(excludedComponents).anyMatch(c -> c == component)) {
                 continue;
@@ -159,8 +207,7 @@ public class SlayerPluginPanel extends PluginPanel {
             Collection<SlayerTask> tasks = slayerTasksFetcher.getSlayerTasksByFilter(searchText);
             updateListModel(tasks);
         } else {
-            // Clear the list when the search text is empty
-            listModel.clear();
+            updateListModel(slayerTasksFetcher.getAllSlayerTasks());
         }
     }
 
@@ -169,9 +216,14 @@ public class SlayerPluginPanel extends PluginPanel {
         updateListModel(slayerTasksFetcher.getAllSlayerTasks()); // Reset the list
     }
 
-    // A helper method to update the list model
     public void updateListModel(Collection<SlayerTask> tasks) {
         listModel.clear();
-        tasks.forEach(listModel::addElement);
+        tasks.stream()
+                .sorted(Comparator.comparing(SlayerTask::getMonster, String.CASE_INSENSITIVE_ORDER))
+                .forEach(listModel::addElement);
+    }
+
+    public void refresh() {
+        createTaskListPanel(slayerTasksFetcher.getAllSlayerTasks());
     }
 }
